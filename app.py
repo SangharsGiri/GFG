@@ -53,8 +53,20 @@ with st.container():
 		st_lottie(lottie_file3)
 		#st_lottie(lottie_file4)
 
+with st.container():
+	colum1, colum2, colum3 = st.columns(3)
+	with colum1:
+		st.write("")
+	with colum2:
+		st.write("---")
+		st.link_button("Follow our Facebook page GFG", "https://www.facebook.com/godfathergamingg/")
+		st.write("---")
+	with colum3:
+		st.write("")	
+		
 
 st.write("---")
+	
 
 style = "<style>.row-widget.stLinkButton {text-align: center;}, MainMenu {visibility: hidden;}, fotter {visibility: hidden;}, header {visibility: hidden;}</style>"
 st.markdown(style, unsafe_allow_html=True)
